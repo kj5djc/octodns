@@ -1,0 +1,89 @@
+---
+providers:
+  config:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./domains
+    enforce_order: false
+
+  cloudflare:
+    class: octodns_cloudflare.CloudflareProvider
+    email: env/CLOUDFLARE_GLOBAL_EMAIL
+    token: env/CLOUDFLARE_GLOBAL_KEY
+
+  # route53:
+  #   class: octodns_route53.Route53Provider
+  #   access_key_id: env/AWS_ACCESS_KEY_ID
+  #   secret_access_key: env/AWS_SECRET_ACCESS_KEY
+
+zones:
+  # chriskacerguis.com.:
+  #   sources:
+  #     - config
+  #   targets:
+  #     - cloudflare
+
+  # cowdog.io.:
+  #   sources:
+  #     - config
+  #   targets:
+  #     - cloudflare
+
+  # fuzzyblender.com.:
+  #   sources:
+  #     - config
+  #   targets:
+  #     - cloudflare
+
+  # kacerguis.com.:
+  #   sources:
+  #     - config
+  #   targets:
+  #     - cloudflare
+
+  # kafotter.com.:
+  #   sources:
+  #     - config
+  #   targets:
+  #     - cloudflare
+
+  kj5djc.com.:
+    sources:
+      - config
+    targets:
+      - cloudflare
+
+  # nodesushi.com.:
+  #   sources:
+  #     - config
+  #   targets:
+  #     - cloudflare
+
+  # plainrock.com.:
+  #   sources:
+  #     - config
+  #   targets:
+  #     - cloudflare
+
+  # plainrock.dev.:
+  #   sources:
+  #     - config
+  #   targets:
+  #     - cloudflare
+
+  # plainrock.net.:
+  #   sources:
+  #     - config
+  #   targets:
+  #     - cloudflare
+
+  # plainrock.org.:
+  #   sources:
+  #     - config
+  #   targets:
+  #     - cloudflare
+
+  # prayertostjoseph.org.:
+  #   sources:
+  #     - config
+  #   targets:
+  #     - route53
