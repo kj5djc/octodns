@@ -7,6 +7,9 @@
       - 185.199.109.153
       - 185.199.110.153
       - 185.199.111.153
+    octodns:
+      cloudflare:
+        auto-ttl: true
   - type: MX
     ttl: 300
     values:
@@ -14,56 +17,89 @@
         exchange: mx01.mail.business.icloud.com.
       - preference: 20
         exchange: mx02.mail.business.icloud.com.
+    octodns:
+      cloudflare:
+        auto-ttl: true
   - type: TXT
     ttl: 300
     values:
       - apple-domain-verification=rT2T1L4GPbh4McHN
       - 'v=spf1 include:businessmail.apple ~all'
+    octodns:
+      cloudflare:
+        auto-ttl: true
 
 _14f6fa3a21453e9f25413970a88009f1:
   type: CNAME
   ttl: 300
   value: e07761e767570a88a51aa884f3c7598a.70aeb0647b3c4ff14edbd668b666ec8b.68c6f7a03eb08.comodoca.com.
+  octodns:
+    cloudflare:
+      auto-ttl: true
 
 _atproto:
   type: TXT
   ttl: 300
   value: did=did:plc:tdt55wsdowejhxudmpxinxl4
+  octodns:
+    cloudflare:
+      auto-ttl: true
 
 _dmarc:
   type: TXT
   ttl: 300
   value: 'v=DMARC1\; p=reject\; pct=100\; rua=mailto:re+fvuo9g8zf0j@dmarc.postmarkapp.com\; sp=none\; aspf=r\;'
+  octodns:
+    cloudflare:
+      auto-ttl: true
 
 _github-pages-challenge-chriskacerguis:
   type: TXT
   ttl: 300
   value: e82e75f9cbcf7429961524613fc97e
+  octodns:
+    cloudflare:
+      auto-ttl: true
 
 20240407150144pm._domainkey:
   type: TXT
   ttl: 300
   value: 'k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQChnmbgJhp4oF0SHQVhsuy/pP1XyR/FWF8yVXbFt405ZQ6xOmbu8Ycifko4bYT4HNEeMTnPwZkL/mFL7mkqKF5w/GR1vZSwiKTDmsgKABEbeHAp2wQP8Sl8BRBBSLHyTShE6uRqd+PebFZ1uMu6ydNXpbK1/FuYEWcqP1MSFnzUqQIDAQAB'
+  octodns:
+    cloudflare:
+      auto-ttl: true
 
 blue:
   type: A
   ttl: 300
   value: 192.168.1.138
+  octodns:
+    cloudflare:
+      auto-ttl: true
 
 google._domainkey:
   type: TXT
   ttl: 300
   value: 'v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuWUJYao07O0rOKwTJ2g8KTMoCKyoa/Q3Qef10YVdP7mCfMvRKDPAV7Wqmdn6ktqS+hZKa4r/GTWgmkw6HhbzB2CU8FG7TLxf32EpRVB5a5yPdLNNj7tLFx11E0/nJmodHbkqJaovRbW7IGGs7RcBwOSe4CKi7U8WIth9Y+I3VA0r33Ctoz9jlKAvAfaV2sUP2+QpR6r3au7Sb08fs5Z6cmfHABBi2lRsAxyXfKTKjFuVls6h4dA6lpaKg5jI3IwnkASjSqNVdjwB99poU23PRKsvzQTGuORGDu9RhNl32FccESnNrtlXGPkYSvnWXLZYmWwFHU9Ac32uZRI1DiP9zQIDAQAB'
+  octodns:
+    cloudflare:
+      auto-ttl: true
 
 home:
   type: A
   ttl: 300
   value: 192.168.1.62
+  octodns:
+    cloudflare:
+      auto-ttl: true
 
 localdev:
   type: A
   ttl: 300
   value: 127.0.0.1
+  octodns:
+    cloudflare:
+      auto-ttl: true
 
 netlog:
   type: CNAME
@@ -71,29 +107,45 @@ netlog:
   value: gf768xjl.up.railway.app.
   octodns:
     cloudflare:
+      auto-ttl: true
       proxied: true
 
 orange:
   type: A
   ttl: 300
   value: 192.168.1.69
+  octodns:
+    cloudflare:
+      auto-ttl: true
 
 pm-bounces:
   type: CNAME
   ttl: 300
   value: pm.mtasv.net.
+  octodns:
+    cloudflare:
+      auto-ttl: true
 
 sig1._domainkey:
   type: CNAME
   ttl: 300
   value: sig1.dkim.kj5djc.com.at.icloudmailadmin.com.
+  octodns:
+    cloudflare:
+      auto-ttl: true
 
 www:
   type: CNAME
   ttl: 300
   value: chriskacerguis.github.io.
+  octodns:
+    cloudflare:
+      auto-ttl: true
 
 yellow:
   type: A
   ttl: 300
   value: 192.168.1.150
+  octodns:
+    cloudflare:
+      auto-ttl: true
