@@ -77,14 +77,6 @@ blue:
     cloudflare:
       auto-ttl: true
 
-google._domainkey:
-  type: TXT
-  ttl: 300
-  value: 'v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuWUJYao07O0rOKwTJ2g8KTMoCKyoa/Q3Qef10YVdP7mCfMvRKDPAV7Wqmdn6ktqS+hZKa4r/GTWgmkw6HhbzB2CU8FG7TLxf32EpRVB5a5yPdLNNj7tLFx11E0/nJmodHbkqJaovRbW7IGGs7RcBwOSe4CKi7U8WIth9Y+I3VA0r33Ctoz9jlKAvAfaV2sUP2+QpR6r3au7Sb08fs5Z6cmfHABBi2lRsAxyXfKTKjFuVls6h4dA6lpaKg5jI3IwnkASjSqNVdjwB99poU23PRKsvzQTGuORGDu9RhNl32FccESnNrtlXGPkYSvnWXLZYmWwFHU9Ac32uZRI1DiP9zQIDAQAB'
-  octodns:
-    cloudflare:
-      auto-ttl: true
-
 home:
   type: A
   ttl: 300
@@ -100,15 +92,6 @@ localdev:
   octodns:
     cloudflare:
       auto-ttl: true
-
-netlog:
-  type: CNAME
-  ttl: 300
-  value: gf768xjl.up.railway.app.
-  octodns:
-    cloudflare:
-      auto-ttl: true
-      proxied: true
 
 orange:
   type: A
